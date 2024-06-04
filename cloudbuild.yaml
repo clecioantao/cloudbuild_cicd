@@ -27,7 +27,7 @@ steps:
    - '--project'
    - 'labcle011'
 images:
-- 'gcr.io/labcle011/demo-flask-app:$COMMIT_SHA'
+- 'us-central1-docker.pkg.dev/labcle011/python-apps/demo-flask-app:$COMMIT_SHA'
 
 options:
   logging: CLOUD_LOGGING_ONLY
