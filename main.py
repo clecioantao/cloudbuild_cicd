@@ -8,6 +8,7 @@ client = bigquery.Client()
 
 @app.route('/')
 def main(big_query_client=client):
+    
     table_id = "labcle011.test_schema.us_states"
     job_config = bigquery.LoadJobConfig(
         write_disposition=bigquery.WriteDisposition.WRITE_TRUNCATE,
